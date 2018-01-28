@@ -2263,6 +2263,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &444228602 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1501245266792176, guid: 4d9dfc238bf5c554faad479b284488bb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1667539292}
+--- !u!65 &444228605
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 444228602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.12, y: 5.12, z: 7.15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &449239541
 GameObject:
   m_ObjectHideFlags: 0
@@ -9416,7 +9433,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 916716b0929025a41aaf52ada20d6534, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12087,6 +12104,11 @@ Prefab:
     - target: {fileID: 1554503774496950, guid: c98b2aba04e01b345a6b34f705fa61a2, type: 2}
       propertyPath: m_Name
       value: Enemies (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114181629660901218, guid: c98b2aba04e01b345a6b34f705fa61a2,
+        type: 2}
+      propertyPath: maxSpeed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c98b2aba04e01b345a6b34f705fa61a2, type: 2}

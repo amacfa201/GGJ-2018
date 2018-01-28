@@ -36,7 +36,7 @@ public class LifeScript : MonoBehaviour {
     //player2RespawnTimer -= Time.deltaTime;
     PlayerLivesManager();
     
-
+        //Test for pushing to github
 
     }
 

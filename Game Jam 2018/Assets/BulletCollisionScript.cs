@@ -27,6 +27,7 @@ public class BulletCollisionScript: MonoBehaviour {
                 {
                     follow = other.gameObject.GetComponent<Follow>();
                     SpawnNewNPC();
+                    FindObjectOfType<AudioManager>().Play("LoveHit");
                     if (follow.Player1sBitch == false)
                     {
                         other.gameObject.GetComponent<Follow>();
@@ -41,6 +42,7 @@ public class BulletCollisionScript: MonoBehaviour {
              if( this.gameObject.tag == "Bullet2")
                 {
                     SpawnNewNPC();
+                    FindObjectOfType<AudioManager>().Play("HateHit");
                     follow = other.gameObject.GetComponent<Follow>();
                     if (follow.Player2sBitch == false)
                     {
@@ -58,6 +60,7 @@ public class BulletCollisionScript: MonoBehaviour {
                 if (this.gameObject.tag == "Bullet2")
                 {
                     follow = other.gameObject.GetComponent<Follow>();
+                    FindObjectOfType<AudioManager>().Play("HateHit");
                     if (follow.Player2sBitch == false)
                     {
                         Destroy(this.gameObject);
@@ -70,6 +73,7 @@ public class BulletCollisionScript: MonoBehaviour {
                 break;
             case "Player2sBitch":
                 follow = other.gameObject.GetComponent<Follow>();
+                FindObjectOfType<AudioManager>().Play("LoveHit");
                 if (follow.Player1sBitch == false)
                 {
                     other.gameObject.GetComponent<Follow>();

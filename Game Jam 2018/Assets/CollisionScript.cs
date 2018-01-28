@@ -51,6 +51,7 @@ public class CollisionScript : MonoBehaviour {
                         {
                             
                             playerLifeScript.player2Health -= 1;
+
                         }
                     }
                 }
@@ -61,6 +62,7 @@ public class CollisionScript : MonoBehaviour {
 
                     follow.Player1sBitch = true;
                     follow.Player2sBitch = false;
+
                 }
                 else
                 {
@@ -75,11 +77,13 @@ public class CollisionScript : MonoBehaviour {
                 {
                     auraBuffP1 = true;
                     auraBuffTimerP1 = 10;
+                    FindObjectOfType<AudioManager>().Play("Powerup");
                 }
                 else if (this.tag == "Player2")
                 {
                     auraBuffP2 = true;
                     auraBuffTimerP2 = 10;
+                    FindObjectOfType<AudioManager>().Play("Powerup");
                 }
                 break;
             case "ImmunityBuff":
@@ -87,11 +91,13 @@ public class CollisionScript : MonoBehaviour {
                 {
                     p1Immune = true;
                     immuneTimerP1 = 10f;
+                    FindObjectOfType<AudioManager>().Play("Powerup");
                 }
                 else if (this.tag == "Player2")
                 {
                     p2Immune = true;
                     immuneTimerP2 = 10f;
+                    FindObjectOfType<AudioManager>().Play("Powerup");
                 }
                 break;
 

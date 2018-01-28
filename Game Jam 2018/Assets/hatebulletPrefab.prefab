@@ -72,7 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xfire: 0
   yfire: 0
-  shotSpeed: 5
+  shotSpeed: 30
   playerNo: 2
 --- !u!114 &114683073247300320
 MonoBehaviour:

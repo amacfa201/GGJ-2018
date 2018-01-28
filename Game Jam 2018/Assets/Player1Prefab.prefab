@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36344311c3147a409ea7052c6f40593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 8
+  movementSpeed: 10
   xfire: 0
   yfire: 0
   playerNo: 1
@@ -148,6 +148,9 @@ MonoBehaviour:
   player2SpawnPoint: {x: 6.5, y: 1.6, z: 0}
   player1: {fileID: 0}
   player2: {fileID: 0}
+  respawnTime: 3
+  chase1: 1
+  chase2: 1
 --- !u!135 &135420921946742466
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 135989396458890998}
   - component: {fileID: 114593460774214898}
   - component: {fileID: 114085298932349272}
+  - component: {fileID: 114505537958424936}
   m_Layer: 0
   m_Name: Player2Prefab 1
   m_TagString: Player2
@@ -92,6 +93,30 @@ MonoBehaviour:
   immuneTimerP1: 0
   immuneTimerP2: 0
   follow: {fileID: 0}
+--- !u!114 &114505537958424936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1333185631350574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ff86380c784124c9521784db568193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1Lives: 3
+  player2Lives: 3
+  player1Health: 3
+  player2Health: 3
+  player1RespawnTimer: 0
+  player2RespawnTimer: 0
+  player1SpawnPoint: {x: -8, y: 1.5, z: 0}
+  player2SpawnPoint: {x: 6.5, y: 1.6, z: 0}
+  player1: {fileID: 0}
+  player2: {fileID: 0}
+  respawnTime: 3
+  chase1: 1
+  chase2: 1
 --- !u!114 &114593460774214898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -120,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36344311c3147a409ea7052c6f40593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 8
+  movementSpeed: 10
   xfire: 0
   yfire: 0
   playerNo: 2
